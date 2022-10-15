@@ -13,6 +13,7 @@ form {
 }
 
 .card {
+    background-color: rgba(255, 174, 97, 0.3);
     display: block;
     margin: 0 auto;
     padding: 20px;
@@ -33,11 +34,17 @@ ul {
     padding-top: 20px;
 }
 
+.current-weather-side {
+    margin: 5px;
+    height: 345px;
+    text-align: center;
+}
+
 .city-current {
-    font-size: 22px;
+    font-size: 28px;
     font-weight: bold;
     color: #202124;
-    padding-top: 10px;
+    padding-top: 25px;
 }
 
 .temperature-current {
@@ -95,14 +102,8 @@ ul {
 }
 
 footer {
+    text-align: center;
     font-size: 16px;
     margin-top: 10px;
 }
 
-.leftSide {
-    background-color:rgba(204, 250, 204, 0.548);
-}
-
-.rightSide {
-    background-color: rgba(250, 204, 204, 0.548);
-}
