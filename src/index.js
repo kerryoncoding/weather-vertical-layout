@@ -102,20 +102,20 @@ function displayForecast(response) {
     let forecastHTML = `<div class="row">`;
     futureDates.forEach(function(futureDay, index){
         if (index < 5) {forecastHTML = forecastHTML + 
-            `<div class="col card-future">
-                <div class="day-future">${formatFutureDate(futureDay.dt)}</div>
-                <div>
+            `<span class="row card-future">
+                <span class="day-future">${formatFutureDate(futureDay.dt)}</span>
+                <span>
                   <img
                     src="http://openweathermap.org/img/wn/${futureDay.weather[0].icon}@2x.png"
                     alt="weather-icon"
                     class="icon-future"
                   />
-                </div>
+                </span>
                 <div class="temperature-future">
                 <span class="high-future">${Math.round(futureDay.temp.max)}° </span
                 ><span class="low-future">| ${Math.round(futureDay.temp.min)}°</span>                
                 </div>
-              </div>`;
+              </span>`;
         }
     })
 
