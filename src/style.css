@@ -65,7 +65,7 @@ ul {
 
 .card-future {
     position: relative;
-    height: 75px;
+    height: 65px;
     text-align: center;
     margin: 5px;
     border: 1px solid rgba(0, 0, 0, 0.3);
@@ -81,15 +81,14 @@ ul {
 
 .icon-future {
     position: relative;
-    top: 20px;
     height: 75px;
 }
 
 .temperature-future {
     position: relative;
     font-size: 14px;
-    bottom: 10px;
-}
+    top:20px;
+   }
 
 .high-future {
     font-weight: bold;
