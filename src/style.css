@@ -1,0 +1,100 @@
+.container {
+    max-width: 600px;
+    margin-top: 35px;
+}
+
+form {
+    padding-top: 10px;
+}
+
+#celsious,
+#fahrenheit {
+    text-decoration: none;
+}
+
+.card {
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+
+}
+
+.icon-current {
+    height: 100px;
+}
+
+#right-side {
+    text-align: right;
+    padding-top: 20px;
+}
+
+.city-current {
+    font-size: 22px;
+    font-weight: bold;
+    color: #202124;
+    padding-top: 10px;
+}
+
+.temperature-current {
+    font-size: 48px;
+    color: #202124;
+}
+
+.units {
+    font-size: 16px;
+    position: relative;
+    bottom: 20px;
+}
+
+.units .active {
+    font-weight: bold;
+    color: #202124;
+    cursor: default;
+}
+
+.time-current,
+.description-current {
+    font-size: 16px;
+    color: #70757A;
+}
+
+.card-future {
+    position: relative;
+    text-align: center;
+    top: 20px;
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+.day-future {
+    position: relative;
+    font-size: 18px;
+    font-weight: bold;
+    top: 15px;
+}
+
+.icon-future {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: 75px;
+}
+
+.temperature-future {
+    position: relative;
+    font-size: 14px;
+    bottom: 10px;
+}
+
+.high-future {
+    font-weight: bold;
+}
+
+footer {
+    font-size: 16px;
+    margin-top: 10px;
+}
