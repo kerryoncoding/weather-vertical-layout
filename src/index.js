@@ -99,23 +99,23 @@ function formatFutureDate(timestamp) {
 function displayForecast(response) {
     let futureDates = response.data.daily
     let forecastElement = document.querySelector("#forecast");
-    let forecastHTML = `<div class="row">`;
+    let forecastHTML = `<div>`;
     futureDates.forEach(function(futureDay, index){
         if (index < 5) {forecastHTML = forecastHTML + 
-            `<span class="row card-future">
-                <span class="day-future">${formatFutureDate(futureDay.dt)}</span>
-                <span>
+            `<div class="row card-future">
+                <div class="col-4 day-future">${formatFutureDate(futureDay.dt)}</div>
+                <div class="col-4">
                   <img
                     src="http://openweathermap.org/img/wn/${futureDay.weather[0].icon}@2x.png"
                     alt="weather-icon"
                     class="icon-future"
                   />
-                </span>
-                <div class="temperature-future">
+                </div>
+                <div class="col-4 temperature-future">
                 <span class="high-future">${Math.round(futureDay.temp.max)}° </span
                 ><span class="low-future">| ${Math.round(futureDay.temp.min)}°</span>                
                 </div>
-              </span>`;
+              </div>`;
         }
     })
 

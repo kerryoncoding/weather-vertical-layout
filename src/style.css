@@ -65,22 +65,23 @@ ul {
 
 .card-future {
     position: relative;
+    height: 75px;
     text-align: center;
-    top: 20px;
-    padding: 0;
-    margin-bottom: 15px;
+    margin: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
 }
 
 .day-future {
     position: relative;
     font-size: 18px;
     font-weight: bold;
-    top: 15px;
-}
+    top: 20px;
+ }
 
 .icon-future {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    position: relative;
+    top: 20px;
     height: 75px;
 }
 
@@ -97,4 +98,12 @@ ul {
 footer {
     font-size: 16px;
     margin-top: 10px;
+}
+
+.leftSide {
+    background-color:rgba(204, 250, 204, 0.548);
+}
+
+.rightSide {
+    background-color: rgba(250, 204, 204, 0.548);
 }

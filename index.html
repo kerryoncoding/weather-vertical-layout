@@ -39,7 +39,7 @@
         </div>
 
         <div class="row">
-          <div class="col-6">
+          <div class="col-6 leftSide">
             <ul>
               <li class="city-current"><!--Philadelphia--></li>
               <li class="time-current"><!--Sunday 1:22 PM--></li>
@@ -68,15 +68,10 @@
               </li>
             </ul>
           </div>
-          <div class="col-6">
-            <ul>
-              <li><span>sat </span><span>icon </span><span>temp</span></li>
-              <li><span>Sun </span><span>icon</span><span>temp</span></li>
-              <li><span>Mon </span><span>icon</span><span>temp</span></li>
-              <li><span>Tue </span><span>icon</span><span>temp</span></li>
-              <li><span>Wed </span><span>icon</span><span>temp</span></li>
-            </ul>
-            <div id="forecast"><!-- moved HTML to javascript --></div>
+          <div class="col-6 flex rightSide">
+            <div class="row">
+              <div id="forecast"><!-- moved HTML to javascript --></div>
+            </div>
           </div>
         </div>
       </div>
