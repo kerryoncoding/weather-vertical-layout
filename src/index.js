@@ -55,8 +55,8 @@ function updateCurrent(response) {
     let iconCode = response.data.weather[0].icon;
     document.querySelector(".icon-current").setAttribute("src", `http://openweathermap.org/img/wn/${iconCode}@2x.png`);
     
-    celsiousTemperature = response.data.main.temp
-    document.querySelector(".temperature-current").innerHTML = Math.round(celsiousTemperature);
+    fahrenheitTemperature = response.data.main.temp
+    document.querySelector(".temperature-current").innerHTML = Math.round(fahrenheitTemperature);
     document.querySelector(".humidity-current").innerHTML = response.data.main.humidity;
     document.querySelector(".wind-current").innerHTML = Math.round(response.data.wind.speed);
     
@@ -81,13 +81,13 @@ function handleSubmit(event) {
 function unitsFahrenheit() {
     celsious.classList.remove("active");
     fahrenheit.classList.add("active");
-     document.querySelector(".temperature-current").innerHTML = Math.round(celsiousTemperature * 9/5) + 32;
+     document.querySelector(".temperature-current").innerHTML = Math.round(fahrenheitTemperature);
 }
 
 function unitsCelsious() {
     celsious.classList.add("active");
     fahrenheit.classList.remove("active");
-    document.querySelector(".temperature-current").innerHTML = Math.round(celsiousTemperature);
+    document.querySelector(".temperature-current").innerHTML = Math.round((fahrenheitTemperature -32) * 5/9);
 }
 
 function formatFutureDate(timestamp) {
@@ -130,7 +130,7 @@ document.querySelector("#fahrenheit").addEventListener("click", unitsFahrenheit)
 
 document.querySelector("#celsious").addEventListener("click", unitsCelsious);
 
-let celsiousTemperature = null;
+let fahrenheitTemperature = null;
 
 
 let city = "Philadelphia";
