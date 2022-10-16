@@ -47,7 +47,8 @@ function getForecast(coordinates) {
 
 
 function updateCurrent(response) {
-    document.querySelector(".city-current").innerHTML = response.data.name;
+    console.log(response.data.sys.country);
+    document.querySelector(".city-current").innerHTML = response.data.name + " (" + response.data.sys.country + ")" ;
     //citytime
     document.querySelector(".time-current").innerHTML = formatDate(response.data.dt * 1000);
     document.querySelector(".description-current").innerHTML = response.data.weather[0].description;
@@ -97,7 +98,7 @@ function formatFutureDate(timestamp) {
 }
 
 function displayForecast(response) {
-    let futureDates = response.data.daily
+    let futureDates = response.data.daily;
     let forecastElement = document.querySelector("#forecast");
     let forecastHTML = `<div>`;
     futureDates.forEach(function(futureDay, index){
